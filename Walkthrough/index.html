@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html> 
+   
+    <head>
+        <meta charset="UTF-8">
+        <title>Basic Web Page</title>
+        <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+
+        <style>
+          .Rose1{
+                background-image: url('Images/Rose1.jpeg');
+                background-repeat: no-repeat;
+                background-size:100% 100% ;
+                background-attachment: fixed;
+                color:aliceblue;
+                height: 100px;
+                text-align: center;
+                
+            }
+         table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+               
+            }
+         tr:hover{background-color:rgba(0, 248, 165, 0.833)}
+
+         ul.nav{
+            list-style-type: none;
+            background-color: beige;
+            padding: 0px ;
+            margin: 0px;
+            overflow: hidden;
+         }
+         ul.nav li{
+            float: right;
+         }
+         ul.nav li a {
+                display: block;
+                color: rgb(0, 0, 0);
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+           }
+
+        ul.nav li a:hover {
+            background-color: #d3d308;
+           }
+         
+         
+
+        </style>
+    </head>
+    <body>
+        <h1 id="top"> This is my first website </h1>
+        <p> Now we will learn about links , apparently all kinds of links</p>
+        <a href=""> This is a blank link </a>
+        <br> 
+        <h2>Lets now move on to W3school for learning more about links how they work</h2>
+        <a href="https://www.w3schools.com/" target="_self">W3School</a>
+        <a href="">Invalid Link</a>
+        <p>So one thing we have got is that links appear side by side by default anchor tag (a) doesn't provide a line break like the paragraph and headers. Also an unvisited link is marked with blue underlined , visited link marked with purple underline and an active link is red underline </p>
+        <h3>Now we will set an image as a link</h3>
+        <a href="https://www.w3schools.com/" target="_blank"> <img src="Images/pinkbackground.jpg" alt="W3School" style="width:100px; height: 100px;"></a>
+        <p>Click Image</p>
+        <h4>Now we will learn using email links</h4>
+        <a href="malito:jafirislam10@gmail.com"> jafirislam10@gmail.com</a>
+        <p> Buttons as a link</p>
+    <button onclick="document.location='https://www.w3schools.com/'">W3School</button>   
+    <p> Adding a bookmark , cllicking the link we can move on to a portion of the page directly</p>
+    <a href="#top"> Back to Top </a>
+     <p>So now as we are done with links we will move forward for other learning materials </p>
+
+    <h4 class="Rose1"> Images Now </h4>
+
+    <p>Now we are done with images lets move on to Tables</p>
+
+    <table style="width: 100%;">Student Data
+        <tr>
+            <th>Serial</th>
+            <th>Name</th>
+            <th>Id</th>
+            <th>Cgpa</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Jafir Islam Siam</td>
+            <td>23-50574-1</td>
+            <td>2.5</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Rafi</td>
+            <td>23-50374-1</td>
+            <td>3.5</td>
+        </tr>
+          <tr>
+            <td>3</td>
+            <td>Apon</td>
+            <td>23-50372-2</td>
+            <td>3.8</td>
+        </tr>
+    </table>
+
+    <p>We are done with tables , now lets move on to lists </p>
+    <h5>Lists</h5>
+    <ul>
+        <caption>Groccery List </caption>
+        <li>Rice</li>
+        <li> Lentils </li>
+        <li>Oil</li>
+        <li>Soap</li>
+        <li> Shampoo </li>
+
+    </ul>
+
+    <p>Now we can place this list items horizontally to create a navigation menu</p>
+
+     <ul class="nav"> 
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Logout">Logout</a></li>
+    </ul>
+
+    <h5>Today we will learn about Forms </h5>
+
+     
+    </body>
+</html>

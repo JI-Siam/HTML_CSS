@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Practise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <h1 style="color: darkgreen; font-family: Roboto; text-align: center;"> <u>Forms Practise</u></h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, dolore consequatur quam quis aliquam itaque quo? Ab id provident esse quia accusamus nobis numquam dolore, eaque, debitis quibusdam commodi omnis!</p>
+    <form action="/submit" method="post">
+       <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required placeholder="Enter username"> <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Enter password min 6, max 8" minlength="6" maxlength="8"> <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email"> <br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" required placeholder="123-456-7890" > <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob"> <br><br>
+
+        <p style="margin-bottom: 6px; margin-top: 5px;">Gender: </p>
+        <input type="radio" name="gender" id="male"> 
+        <label for="male">Male</label> <br>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+        
+        <br><br>
+
+        <label for="payment">Payment:</label>
+        <select name="payment" id="payment">
+             <option value="bkash">Bkash</option>
+             <option value="nagad">Nagad</option>
+             <option value="rocket">Rocket</option> 
+        </select>
+        <br><br>
+
+        <label for="file">Upload File:</label>
+        <input type="file" name="file">
+        <br><br>
+
+        <input type="reset" name="reset" id="reset">
+        <input type="submit" name="submit" id="submit">
+
+        
+
+
+    </form>
+</body>
+</html>

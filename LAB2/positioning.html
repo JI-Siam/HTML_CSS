@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        .sticky-header{
+            position: sticky;
+            top: 0;
+            background-color: darkblue;
+            color: white;
+            padding:10px; 
+            z-index: 5; /* to position image behind/forward from  text  */
+        }
+         .nonsticky-header{
+            top: 0;
+            background-color: darkblue;
+            color: white;
+            padding:10px; 
+            z-index: 5; /* to position image behind/forward from  text  */
+        }
+
+        .box-model{
+            width: 300px;
+            padding: 15px;
+            margin:20px auto ; 
+            border: 2px solid black ; 
+            outline: 3px dashed orange ; /* works like border but doesn't consider any space for the box , it's the outside the element */
+            background-color: lightblue;
+            overflow: auto ;
+            z-index: 1 ; 
+            position: relative; 
+        }
+        .overflow-example{
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            overflow: auto;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h2>Sticky Positioning Example </h2>
+    <div>
+        <div class="sticky-header">This is a sticky header</div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+    
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+    </div>
+
+       <div>
+        <div class="nonsticky-header">This is a  non sticky header</div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+    
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, et ipsa! Repudiandae nobis officiis impedit id, ratione placeat minima ipsam dolores quae, totam dolorum! Unde nesciunt culpa cumque neque quas?</p>
+    </div>
+    
+    <h2>Box Model </h2>
+
+    <div class="box-model">
+        <p>Box Model </p>
+        <ul>
+            <li>Padding</li>
+            <li>Border</li>
+            <li>Margin</li>
+            <li>Outline</li>
+            <li>Overflow</li>
+        </ul>
+
+    </div>
+
+    <h2>Overflow Example</h2>
+
+    <p class="overflow-example">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel eligendi laudantium incidunt vitae, tenetur, quibusdam quae nostrum aspernatur quasi dolore dolor voluptates deleniti eaque! Error delectus deserunt corrupti adipisci earum.</p>
+
+    <h2>Display: Inline Block </h2>
+    
+
+</body>
+
+</html>
