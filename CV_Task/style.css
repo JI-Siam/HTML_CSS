@@ -1,0 +1,20 @@
+#name{
+    margin-left:600px;
+}
+#address , #git{
+    margin-left: 400px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.summary , .experience , .academia , .skills, .projects , .problemsolving, .certifications{
+  transition: box-shadow 0.15s , font-size 0.15s;
+}
+.summary:hover , .experience:hover , .academia:hover , .skills:hover, .projects:hover, .problemsolving:hover, .certifications:hover{
+ box-shadow: 5px 5px 10px rgba(0,0,120,0.5);
+ font-size: 18px;
+ overflow:auto ; 
+}
+.cv{
+   
+    
+}
