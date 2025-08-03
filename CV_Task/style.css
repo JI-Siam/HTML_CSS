@@ -13,6 +13,7 @@
  box-shadow: 5px 5px 10px rgba(0,0,120,0.5);
  font-size: 18px;
  overflow:auto ; 
+ word-wrap: break-word;
 }
 .cv{
    

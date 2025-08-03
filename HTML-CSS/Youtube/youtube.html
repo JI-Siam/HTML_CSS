@@ -5,10 +5,20 @@
     <title>Youtube.com clone</title>
 
     <style>
-        .thumbnail-1{
-            margin: 10px;
+        .thumbnail-1 , .thumbnail-2{
+            display: inline block;
             width: 300px;
             border: 2px solid red ;
+        }
+        .search-bar{
+            display: block;
+        }
+        .video-title{
+            width: 270px;
+        }
+        .video-preview{
+            display: inline-block;
+            vertical-align: top;
         }
 
          
@@ -17,7 +27,21 @@
 </head>
  <body>
     <input class="search-bar" type="text" placeholder="Search">
+    <div class="video-preview">
     <img class="thumbnail-1" src="thumbnails/thumbnail-1.webp" alt="thumbnail-1"> 
+    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+    <p>Marques Broniee</p>
+    <p>3.4M views &#183; 6 months ago </p>
+    </div>
+
+    <div class="video-preview">
+    <img class="thumbnail-2" src="thumbnails/thumbnail-2.webp" alt="thumbnail-2"> 
+    <p class="video-title">
+Try Not To Laugh Challenge #9</p>
+    <p>Markiplier</p>
+    <p>9M views · 4 years ago </p>
+    </div>
+    
     
  </body>
 
