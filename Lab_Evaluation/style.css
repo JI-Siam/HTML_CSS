@@ -1,0 +1,113 @@
+
+        .part-1{
+            display: inline-block;
+            width: 500px;
+            margin-right: 20px;
+            vertical-align: top;
+        }
+
+        .part-2{
+
+                display: inline-block;
+                width: 500px;
+                margin-left: 20px;
+
+        }
+        .right-part , .left-part{
+                position: absolute;
+                width: 220px;
+        }
+        .right-part{
+            margin-left: 220px
+        }
+        .bottom-part{
+            position: absolute;
+            margin-top: 300px ;
+        }
+        
+        #header{
+            color:rgb(1, 61, 103);
+            margin-left: 90px;
+        }
+
+        #fname , #email, #dob, #id, #curr-semester{
+            width: 200px;
+        }
+        #lname , #pnumber , #gender , #department , #cgpa {
+             width: 200px;
+        }
+
+        #exp , #portfolio,  #classtime{
+            width: 400px;
+        }
+        #website, #github{
+            width: 200px;
+        }
+
+        
+        .Register-button{
+           width: 400px;
+           text-align: center;
+           background-color: rgb(1, 61, 103);
+           color: white;
+           padding:10px;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+           transition: background-color 0.15s;
+        }
+        .Register-button:hover{
+            background-color: rgba(1, 61, 103, 0.5);
+        }
+
+        .table{
+            border: none ;
+        }
+        th{
+            background-color: rgb(56, 2, 87);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        td{
+            text-align: center;
+        }
+        #academics , #skills , #projects , #transcript , #education  , #contact , #experience{
+            color:rgb(56, 2, 87) ;
+            font-weight: bold;
+            font-size: 22px;
+        }
+        .profilename{
+            color:rgb(56, 2, 87) ;
+            text-align: center;
+
+        }
+        #sub{
+            text-align: center;
+            font-size: 16px;
+            color: #a79797;
+        }
+
+        #s1 ,#s2 , #s3 ,  #s4 ,#s5 , #s6{
+            color: white;
+            background-color: rgb(56, 2, 87) ;
+            border: none;
+            border-radius: 30px;
+            padding:20px;
+            padding-left: 30px;
+             padding-right: 30px;
+             margin-right:8px;
+            display: inline-block;
+        }
+        .profile-pic{
+            display: block;
+            border: none;
+            border-radius: 500px;
+            width: 100px;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-left: 200px;
+
+        }
+      

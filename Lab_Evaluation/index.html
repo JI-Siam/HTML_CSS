@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Evaluation</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="part-1">
+        This is part 1
+        <h1 id="header">Student Registration</h1>
+
+
+        <div class="top-part">
+
+        <div class="left-part">
+            <label for="fname">First Name</label> <br>
+        <input type="text" id="fname" name="fname" required placeholder="your first name">
+        
+        <br><br>
+
+          <label for="email">Email Address</label> <br> 
+        <input type="email" id="email" name="email" required placeholder="your.email@exampl.com">
+        <br><br>
+
+
+        <label for="dob">Date of Birth</label><br>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+         <label for="id">Student ID</label><br>
+        <input type="text" id="id" name="id" required placeholder="Enter 6-8 digit ID">
+        <br><br>
+
+        
+         <label for="curr-semester">Current Semester</label><br>
+        <input type="text" id="curr-semester" name="curr-semester" placeholder="1-12">
+        <br><br>
+
+        </div>
+
+        
+        <div class="right-part">
+
+         <label for="lname">Last Name</label> <br>
+        <input type="text" id="lname" name="lname" required placeholder="your last name">
+        <br><br>
+
+         <label for="pnumber">Phone Number</label> <br>
+        <input type="tel" id="pnumber" name="pnumber" placeholder="1234567890">
+        <br><br>
+
+         <label for="gender">Gender</label> <br>
+         <select name="gender" id="gender">
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+         </select>
+
+         <br><br>
+
+         <label for="department">Department</label> <br>
+         <select name="department" id="department">
+            <option value="">Select Department</option>
+            <option value="CSE">CSE</option>
+            <option value="EEE">EEE</option>
+            <option value="IPE">IPE</option>
+             <option value="LLB">LLB</option>
+         </select>
+
+         <br><br>
+
+        <label for="cgpa">CGPA</label> <br>
+        <input type="number" id="cgpa" name="cgpa" placeholder="0.00-4.00">
+        <br><br>
+        </div>
+
+        </div>
+
+        <div class="bottom-part">
+            <label for="lang">Programming Languages</label>
+            <br>
+
+             <input type="checkbox" name="lang" id="html" value="HTML/CSS">
+            <label for="html">HTML/CSS</label>
+
+             <input type="checkbox" name="lang" id="js" value="JavaScript">
+            <label for="js">JavaScript</label>
+
+             <input type="checkbox" name="lang" id="py" value="Python">
+            <label for="py">Python</label>
+
+             <input type="checkbox" name="lang" id="java" value="Java">
+            <label for="java">Java</label>
+            <br><br>
+
+            <label for="l-mode">Learning Mode Preference</label><br>
+        
+            <input type="radio" name="l-mode" id="online">
+            <label for="online">Online</label>
+
+            <input type="radio" name="l-mode" id="offline">
+            <label for="offline">Offline</label>
+
+            <input type="radio" name="l-mode" id="hybrid">
+            <label for="hybrid">Hybrid</label>
+            <br><br>
+
+            <label for="exp">Programming Experience</label> <br>
+            <input type="range" name="exp" id="exp">
+            <br><br>
+
+            <label for="website" style="display: inline-block;">Personal website</label> 
+              <label for="github" style="display: inline-block; margin-left: 100px;">Github Profile</label>
+              <br>
+            <input type="url" name="website" id="website" placeholder="https://yourwebstie.com">   
+            <input type="url" name="github" id="github" placeholder="https://github.com/username">
+   <br><br>
+            <label for="portfolio">Upload Portfolio PDF</label><br>
+            <input type="file" name="portfolio" id="portfolio" placeholder="Choose PDF file or drag and drop">
+
+            <br><br>
+
+            <label for="carrer">Career Goals</label><br>
+            <input type="text" name="carrer" id="carrer" placeholder="Describe your carrer aspirations and goals" style="width: 400px;">
+            <br><br>
+
+            <label for="classtime">Prefferd Class Time</label><br>
+            <input type="time" name="classtime" id="classtime">
+
+            <br><br>
+
+            
+            <button class="Register-button">Register Now</button>
+                    </div>
+
+         </div>
+
+    
+
+    <div class="part-2">
+          This is part 2
+
+          <img src="image1.jpg" alt="profile" class="profile-pic"> 
+          <h1 class="profilename">John Doe</h1>
+          <h2 id="sub">Computer Science Student</h2>
+          <h3 id="contact">Contact Information</h3>
+          <hr>
+          <p style="display: inline-block; padding-right: 150px;">john.doe@gmail.com</p>
+          <p style="display: inline-block;">www.johndoe.com</p>
+          <br>
+          <p style="display: inline-block; padding-right: 150px;">+1 (555) 123-4567</p>
+          <p style="display: inline-block; margin-left: 20px;">New York, USA</p>
+
+          <h3 id="skills">Technical Skills </h3>
+          <hr>
+
+          <p id="s1" >HTML/CSS</p>
+          <p id="s2">JavaScript</p>
+          <p id="s3">Python</p>
+          <p id="s4">React</p>
+          <p id="s5">Node.Js</p>
+          <p id="s6">Git</p>
+
+
+          <h3 id="academics">Academic Progress</h3>
+          <hr>
+          <p style="text-align: center;">Cgpa : 3.75 / 4.00</p>
+          <br>
+
+          <h3 id="education">Education</h3>
+          <hr>
+          <p style="color: rgb(56, 2, 87); margin-bottom: 0px; font-weight: bold;">Bachelor of Science in Computer Science</p>
+          <p style="color: grey; margin:0px; font-size: 15px;">University of Technology</p>
+          <p style="color: grey; margin:0px; font-size: 12px;"> 2022- Present</p>
+          <br>
+
+         <h3 id="experience">Experience</h3>
+         <hr>
+          <p style="color: rgb(56, 2, 87); margin-bottom: 0px; font-weight: bold;">Frontend Developer Intern</p> 
+          <p style="color: grey; margin:0px; font-size: 15px;">Tech Solutions Inc,</p>
+          <p style="color: grey; margin:0px; font-size: 12px;">June 2024 - August 2024</p>
+
+          <br>
+
+           <p style="color: rgb(56, 2, 87); margin-bottom: 0px; font-weight: bold;">Web Development Freelancer</p> 
+          <p style="color: grey; margin:0px; font-size: 15px;">Self Employed</p>
+          <p style="color: grey; margin:0px; font-size: 12px;">January 2024 - Present</p>
+
+          <br>
+
+          <h3 id="transcript">Academic Transcript</h3>
+          <hr>
+
+          <table class="table">
+            <tr>
+                <th>Course Code</th>
+                <th>Course Name</th>
+                <th>Credits</th>
+                <th>Grade</th>
+                <th>Gpa</th>
+            </tr>
+
+            <tr>
+                <td>CSE 101</td>
+                <td>Programming Fundamentals</td>
+                <td>3</td>
+                <td>A</td>
+                <td>4.00</td>
+            </tr>
+
+             <tr>
+                <td>CSE 202</td>
+                <td>Data Stuctures</td>
+                <td>3</td>
+                <td>A-</td>
+                <td>3.67</td>
+            </tr>
+
+
+             <tr>
+                <td>CSE 301</td>
+                <td>Database</td>
+                <td>3</td>
+                <td style="color: red;">B+</td>
+                <td>3.33</td>
+            </tr>
+          </table>
+
+          <h3 id="projects">Notable Projects</h3>
+          <hr>
+          <p style="color: rgb(56, 2, 87); margin-bottom: 0px; font-weight: bold;">E-Commerce Website</p>
+          <p style="color: grey; margin:0px; font-size: 15px;">React , Node js, MongoDB</p>
+          <p style="color: grey; margin:0px; font-size: 12px;">Built a full-stack online store</p>
+          
+          
+    </div>
+    
+</body>
+</html>
