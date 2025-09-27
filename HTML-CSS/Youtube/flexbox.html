@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox practise</title>
+
+    <style>
+    .flexbox-div{
+        height: 80px;
+        display:flex; 
+        flex-direction: row;
+        border: solid black 1px;
+    }
+    .flexbox-div1{
+        height: 80px;
+        margin-top: 30px;
+        display:flex; 
+         border: solid black 1px;
+        flex-direction: row;
+        justify-content:center;
+    }
+    .flexbox-div2{
+        height: 80px;
+        margin-top: 30px;
+        display:flex; 
+         border: solid black 1px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    </style>
+   
+</head>
+<body>
+
+     <div class="flexbox-div">
+        <div style="background-color: lightblue; width: 100px; " >1</div>
+        <div style="background-color: lightcoral; flex:1; ">2</div>
+        <div style="background-color: lightblue; flex:2 ; ">3</div>
+    </div>
+
+     <div class="flexbox-div1">
+        <div style="background-color: lightblue; width: 100px; " >1</div>
+        <div style="background-color: lightcoral;  width: 100px;; ">2</div>
+        <div style="background-color: lightblue; width: 100px; ">3</div>
+    </div>
+
+
+    <div class="flexbox-div2">
+        <div style="background-color: lightblue; width: 100px; " >1</div>
+        <div style="background-color: lightcoral; width: 100px; ">2</div>
+        <div style="background-color: lightblue; width: 100px; ">3</div>
+    </div>
+
+
+    
+</body>
+</html>

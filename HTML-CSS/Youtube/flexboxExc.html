@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Excercise</title>
+    <style>
+        .flex-box{
+            display: flex;
+            flex-direction: row;
+            background-color: red;
+            margin-bottom: 20px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 200px 75px;
+
+        }
+        .f1{
+            width: 200px;
+            background-color: lightblue;
+        }
+        .f2{
+            width: 75px;
+            background-color: lightcoral;
+        }
+        .f11 , .f33{
+            width: 50px;
+            background-color: lightblue;
+        }
+
+        .f22{
+            flex: 1;
+            background-color: lightcoral;
+        }
+
+        .flex-box1{
+            display: flex;
+            flex-direction: row;
+            background-color: red;
+            margin-bottom: 20px;
+            justify-content:space-between;
+        }
+
+        .f111 , .f333{
+         
+            background-color: lightblue;
+        }
+         .f222, .f444{
+            background-color: lightcoral;
+        }
+
+        .flex-box2{
+             display: flex;
+            flex-direction: row;
+            background-color: red;
+            margin-bottom: 20px;
+            justify-content:space-between;
+            height: 50px;
+            align-items: center;
+        }
+        .f5{
+            background-color: lightblue;
+        }
+        .f6{
+            background-color: lightcoral;
+        }
+        .navigation{
+            width: 300px;
+        }
+        .nev-flex{
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+        }
+        .row-flex{
+            
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 6px;
+            justify-content: space-between;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .cnt{
+            display: flex;
+            align-items: center;
+            font-size: 11px;
+            color: white;
+            background-color: rgb(6, 97, 255);
+            padding: 0.5px 7px;
+            margin-right: 10px;
+            margin-bottom: 0px;
+            text-align: center;   
+            border-radius: 12px;
+        }
+        .text{
+            font-size: 13px;
+        }
+        .top-flex{
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(117, 19, 236);
+            color: white;
+            align-items: center;
+            justify-content:space-between;
+            height: 60px;
+
+        }
+        .home{
+            width:250px;
+            font-size: 22px;
+        
+            margin-left: 25px;
+        }
+        .search{
+            flex:1;
+              display: flex;
+        }
+        .search-bar{
+            flex: 1;
+            min-width: 0px;
+            height: 35px;
+            border-radius: 20px;
+            border: none;
+            margin: 0 14px;
+            padding-left: 20px;
+        }
+
+        .download{
+            width: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            margin-rig: 5px;
+        }
+        .download-btn{
+            font-size: 22px;
+            background-color: transparent;
+            border: 1px solid rgb(255, 255, 255) ;
+            color: white;
+            width: 120px;
+            height: 40px;
+            cursor: pointer;
+            border-radius: 3px;
+            margin-right: 25px;
+            transition: background-color 0.15s , color 0.15s;
+        }
+        .download-btn:hover{
+           background-color: white;
+           color:rgb(142, 51, 253);
+        }
+
+        .ios-mail{
+            border-radius: 4px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+            border: 1px solid rgb(245, 243, 243);
+            width: 400px;
+          
+        }
+        .all-msg{
+            vertical-align: middle;
+            display: flex;
+            flex-direction: column;
+        }
+         .container{
+            flex:1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .image{
+            width: 75px;
+        }
+        .profile-info{
+         flex: 1;
+        }
+        .profile-pic{
+            width: 50px;
+            height: 50px;
+            margin-left: 10px;
+            border-radius:25px;
+            margin-top: 5px;
+        }
+        .name-time{
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .name{
+            font-size: 16px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .time{
+            color:grey;
+            font-size: 11px;
+            margin-right: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .ios-header{
+            font-size: 12px;
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 15px;
+            padding-left: 12px;
+            margin-bottom: 15px;
+        }
+        .type{
+            font-size: 13px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .popularity{
+            color:grey;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox Excercise</h1>
+    <h2>Excercise 12a.</h2>
+    <div class="flex-box">
+        <div class="f1">
+            200px
+
+        </div>
+        <div class="f2">
+            75 px 
+
+        </div>
+
+    </div>
+
+      <h2>Excercise 12b.</h2>
+    <div class="flex-box">
+        <div class="f11" >
+            50px
+
+        </div>
+        <div class="f22">
+            Flex 1 
+
+        </div>
+
+         <div class="f33">
+            50px
+
+        </div>
+
+    </div>
+
+    <h2>Excercise 12c.</h2>
+    <div class="flex-box1">
+        <div class="f111" >
+            space evenly 
+
+        </div>
+        <div class="f222">
+              space evenly 
+
+        </div>
+
+         <div class="f333">
+             space evenly 
+
+        </div>
+
+        <div class="f444">
+              space evenly 
+
+        </div>
+
+    </div>
+
+    <h2>Excercise 12d.</h2>
+    <div class="flex-box2">
+        <div class="f5" >
+          space-between
+
+        </div>
+        <div class="f6">
+              space-between
+
+        </div>
+
+
+    </div>
+
+    <h2>Excercise 12e.</h2>
+
+    <div class="navigation">
+        <div class="nav-flex">
+        <div class="row-flex">
+            <div class="text">
+                Home
+            </div>
+            <div class="cnt">
+                14
+            </div>
+        </div>
+
+         <div class="row-flex">
+            <div class="text">
+               Notifications
+            </div>
+            <div class="cnt">
+                3
+            </div>
+        </div>
+
+         <div class="row-flex">
+            <div class="text">
+               Message
+            </div>
+            <div class="cnt">
+                5
+            </div>
+        </div>
+    </div>
+
+    </div>
+    
+
+    <h2>Excercise 12f.</h2>
+
+    <div class="top-flex">
+        <div class="home">
+            Home
+        </div>
+        <div class="search">
+            <input type="search" placeholder="Search" class="search-bar">
+        </div>
+        <div class="download">
+            <button class=download-btn>Download</button>
+
+        </div>
+       
+    </div>
+
+    <h2>Excercise 13d.</h2>
+    <div class="ios-mail">
+        <div class="ios-header">
+            ALL INBOXES
+        </div>
+        <div class="all-msg">
+            <div class="container">
+        <div class="image">
+                 <img src="oliver.jpg" alt="picture here" class="profile-pic">
+        </div>
+        <div class="profile-info">
+            <div class="name-time">
+                <div class="name">
+                            Oliver
+                </div>
+                <div class="time">
+                    4.58 PM
+                </div>
+            </div>
+            
+            <div class="type">
+                    Biggest sales of the year!
+            </div>
+            <div class="popularity">
+                Hey there! We're wrting to tell about our...
+            </div>
+            </div>
+            </div>
+
+              <div class="container">
+        <div class="image">
+                 <img src="mimi.jpeg" alt="picture here" class="profile-pic">
+        </div>
+        <div class="profile-info">
+            <div class="name-time">
+                <div class="name">
+                            Mimi
+                </div>
+                <div class="time">
+                    11.58 PM
+                </div>
+            </div>
+            
+            <div class="type">
+                   Meetup Plan 
+            </div>
+            <div class="popularity">
+                Hello dear! We are planning a meetup will...
+            </div>
+            </div>
+            </div>
+
+              <div class="container">
+        <div class="image">
+                 <img src="rex.webp" alt="picture here" class="profile-pic">
+        </div>
+        <div class="profile-info">
+            <div class="name-time">
+                <div class="name">
+                           Mimi
+                </div>
+                <div class="time">
+                    2.08 AM
+                </div>
+            </div>
+            
+            <div class="type">
+                    Congratulations on your graduation
+            </div>
+            <div class="popularity">
+                Hey there! Glad to know you have graduated...
+            </div>
+            </div>
+            </div>
+        </div>
+          
+    </div>
+
+
+
+
+
+    
+</body>
+</html>

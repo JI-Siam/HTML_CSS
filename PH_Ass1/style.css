@@ -1,0 +1,325 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-1{
+    background-image: url('images/Hero-bg.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav{
+    margin-top: 20px;
+}
+#logo{
+    color: rgb(56, 56, 241);
+    font-weight: bold;
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 100px;
+}
+#signup-button{
+    background-color: rgb(56, 56, 241);
+    color:white;
+    padding: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border: none ;
+    border-radius: 4px;
+    margin-left: 1000px;
+     cursor: pointer;
+transition: background-color 0.15s , font-size 0.15s; 
+}
+
+#signup-button:hover{
+    font-size: 16px ;
+    background-color:rgba(235, 190, 8, 0.999);
+}
+
+.main{
+    vertical-align: top;
+    text-align: center;
+    font-size: 60px;
+    margin-top:220px;
+}
+
+#moto p{
+    margin:0px
+}
+
+#stayfocused-button{
+     background-color: rgb(56, 56, 241);
+    color:white;
+    padding: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border: none ;
+    border-radius: 4px;
+transition: background-color 0.15s , font-size 0.15s; 
+     cursor: pointer;
+}
+
+#stayfocused-button:hover{
+       font-size: 16px ;
+    background-color:rgba(235, 190, 8, 0.999);
+}
+
+.page-2{
+    margin:250px 0;
+
+}
+.page-2 .left-part{
+    display: inline-block;
+    width: 40%;
+    margin-top: 150px;
+    margin-left: 150px;
+    vertical-align: top;
+}
+
+.page-2 .left-part p,h2 {
+    margin:0px;
+}
+.page-2 .left-part{
+    text-align: left;
+}
+
+.page-2 .left-part h2{
+    font-size: 35px;
+    margin-bottom:8px;
+}
+
+.page-2 .left-part p{
+    color: grey;
+    font-size: 20px;
+
+}
+
+.page-2 .right-part{
+    background-image: url('images/wc-big.png');
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 380px;
+    height: 300px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-left: 140px;
+}
+
+
+#preview-button{
+     background-color: rgb(56, 56, 241);
+     text-align: center;
+    color:white;
+    margin-top: 12px;
+    padding: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border: none ;
+    border-radius: 4px;
+     transition: background-color 0.15s , font-size 0.15s; 
+     cursor: pointer;
+}
+
+#preview-button:hover{
+    font-size: 16px ;
+    background-color:rgba(235, 190, 8, 0.999);
+}
+
+.page-3{
+       margin:250px 0;
+}
+
+.box-area{
+       width: 65%;
+       text-align: center;
+       background-color: rgba(43, 0, 255, 0.059);
+       margin:200px;
+       margin-bottom: 0px;
+       margin-left: 250px;
+       padding-top: 50px;
+       padding-bottom: 50px;
+       border-radius: 25px;
+}
+
+.box-area h2{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-area .values{
+    display: inline-block;
+    width: 33%;
+}
+
+.box-area .values .num{
+    color:  rgb(56, 56, 241);
+    font-size: 40px;
+    margin: 0px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.box-area .values .des{
+     margin: 0px;
+     color: grey;
+}
+
+.page-4{
+   margin:250px 0;
+}
+.page-4 .left-part{
+    display: inline-block;
+    width: 50%;
+}
+
+.page-4 .left-part h1{
+    text-align: left;
+    font-size: 60px;
+    margin: 0px;
+    margin-top:100px;
+    margin-left: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-4 .right-part{
+    display: inline-block;
+    margin-left:0px;
+    vertical-align: top;
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+     margin-left: 200px;
+}
+
+.page-4 .right-part label{
+    font-weight: bold;
+}
+
+
+.page-4 .right-part input , #textarea{
+    width: 350px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 5px;
+}
+
+.page-4 #textarea{
+     height: 120px;  /* Fixed height */
+    resize: none;   /* Prevent user from resizing */
+    overflow: hidden; /* Hide scrollbars */
+}
+
+#getintouch-button{
+      background-color: rgb(56, 56, 241);
+     text-align: center;
+    color:white;
+    margin-top: 12px;
+    margin-left: 30px;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border: none ;
+    border-radius: 8px;
+    transition: background-color 0.15s , font-size 0.15s , box-shadow 0.15s; 
+     cursor: pointer;
+}
+
+#getintouch-button:hover{
+        font-size: 16px ;
+    background-color:rgba(235, 190, 8, 0.999);
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.125);
+}
+.page-5{
+  margin:250px 0;
+}
+
+.page-5 .users-say{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.page-5 .container{
+    margin-left:240px;
+    display: block;
+    margin-top: 0px;
+     font-family: Arial, Helvetica, sans-serif;
+
+}
+.con1 , .con2 , .con3{
+
+    display: inline-block;
+    margin-right: 30px;
+    padding:20px;
+    border: 1px solid rgba(0, 0, 0, 0.055);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.039); 
+    border-radius: 10px;
+}
+
+.prof-pic, .prof-info{
+    display: inline-block;
+}
+.prof-info{
+    margin: 0px;
+    margin-left: 5px;
+    margin-top :20px;
+    
+}
+.prof-info p{
+    margin: 0px;
+}
+.prof-pic{
+    width: 30px;
+}
+
+.checked{
+    color: orange;
+}
+
+.prof-img{
+    border-radius: 40px;
+    width: 30px;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+
+footer{
+    text-align: center;
+}
+#footer-logo{
+    margin-top: 30px;
+     color: rgb(56, 56, 241);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    font-size: 70px;
+}
+#footer-navigations{
+    margin-top: 0px;
+}
+.footer-btn{
+ background-color: transparent;
+ margin: 15px;
+ color: grey;
+ margin-top: 0px;
+ padding:10px;
+ border: none;
+ cursor: pointer;
+ transition: text-decoration 0.15s;
+}
+.footer-btn:hover{
+  text-decoration: underline;
+}
+
+#footer-text{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    margin-bottom: 0px;
+}
+
+

@@ -1,79 +1,110 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Jafir Islam Siam </title>
-        <style>
-            .main{
-                position: relative;
-                /*background-image: url(images/mainbackground.jpg);*/
-                margin:0px;
-                background-position:center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                height: 100vh;
-                width: 100%;
-                z-index: -1;
-                background-color: rgba(0, 0, 0, 0.92);
-            }
-            .name{
-                position: absolute;
-                color: white;
-                font-size: 80px;
-                left: 100px;
-                top: 20%;
-                border: 2px solid rgb(81, 1, 118);
-                padding: 30px;
-                border-radius: 15px;
-                font-weight: bold;
-                
-            }
-            .bio{
-                position: absolute;
-                color: white;
-                font-size: 30px;
-                left: 190px;
-                top: 40%;
-                border: none;
-            }
-            .links{
-                position: absolute;
-                left: 110px;
-                top: 50%;
-            }
+<head>
+    <meta charset="UTF-8">
+    <title>Jafir Islam Siam</title>
+    <style>
+        .main {
+            position: relative;
+            margin: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+            z-index: -1;
+            background-color: rgba(0, 0, 0, 0.92);
+        }
 
-            .links a{
-                padding: 15px;
-                color: rgb(81, 1, 118);
-                left: 210px;
-                top: 40%;
-                border: none;
-                margin: 20px;
-                font-size: 18px;
-                font-weight: bold;
-            }
+        /* Container with glowing animated border */
+        .container {
+            position: relative;
+            display: inline-block;
+            padding: 30px 60px;
+            border-radius: 15px;
+            margin-left: 100px;
+            top: 20%;
+        }
 
-            .links a:link{
-                text-align: center;
-                text-decoration: none;
-            }
-          
-        </style>
-    </head>
-    <body>
-        
-        <div class="main">
+        .container::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 15px;
+            padding: 3px;
+            background: linear-gradient(90deg, #6f00ff, #ff00ff, #6f00ff);
+            background-size: 300% 300%;
+            animation: borderMove 5s linear infinite;
+            -webkit-mask:
+                linear-gradient(#000 0 0) content-box,
+                linear-gradient(#000 0 0);
+            -webkit-mask-composite: xor;
+                    mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        .name {
+            position: relative;
+            color: white;
+            font-size: 80px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Bio text positioned over border gap */
+        .bio {
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.92); /* Match page bg */
+            padding: 0 12px;
+            line-height: 1.2;
+            white-space: nowrap; /* Keep in single line */
+            color: white;
+            font-size: 28px;
+            font-weight: 500;
+            border-radius: 8px;
+        }
+
+        @keyframes borderMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 300% 50%; }
+        }
+
+        .links {
+            position: absolute;
+            left: 110px;
+            top: 50%;
+        }
+
+        .links a {
+            padding: 15px;
+            color: rgb(81, 1, 118);
+            margin: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            color: #ff00ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
             <div class="name">Jafir Islam Siam</div>
-            <div class="bio">
-                An Introverted Aspiring Leader
-            </div>
-            <div class="links">
-                <a href="">Github</a>
-                <a href="">Facebook</a>
-                <a href="">LinkedIn</a>
-                <a href="">Google Scholar</a>
-            </div>
+            <div class="bio">An Introverted Aspiring Leader</div>
         </div>
-      
-    </body>
+
+        <div class="links">
+            <a href="#">Github</a>
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Google Scholar</a>
+        </div>
+    </div>
+</body>
 </html>

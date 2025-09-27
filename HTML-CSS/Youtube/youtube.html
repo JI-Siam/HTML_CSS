@@ -4,43 +4,245 @@
     <meta charset="UTF-8"> 
     <title>Youtube.com clone</title>
 
-    <style>
-        .thumbnail-1 , .thumbnail-2{
-            display: inline block;
-            width: 300px;
-            border: 2px solid red ;
-        }
-        .search-bar{
-            display: block;
-        }
-        .video-title{
-            width: 270px;
-        }
-        .video-preview{
-            display: inline-block;
-            vertical-align: top;
-        }
-
-         
-    </style>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+   <link rel="stylesheet" href="styles/video.css">
+      <link rel="stylesheet" href="styles/sidebar.css">
 </head>
  <body>
-    <input class="search-bar" type="text" placeholder="Search">
-    <div class="video-preview">
-    <img class="thumbnail-1" src="thumbnails/thumbnail-1.webp" alt="thumbnail-1"> 
-    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-    <p>Marques Broniee</p>
-    <p>3.4M views &#183; 6 months ago </p>
+ 
+
+    <header>
+        <div class="left">
+            <img src="icons/hamburger-menu.svg" alt=""
+            class="hamburger">
+            <img src="icons/youtube-logo.svg" alt=""
+            class="yt-logo">
+        </div>
+        <div class="middle">
+    
+                <input class="search-bar" type="text" placeholder="Search">
+
+              
+                <button class="search-btn"> <img src="icons/search.svg" alt="search button" class="search-icon"> </button>
+    
+        
+                <button class="mic-btn">
+                    <img src="icons/voice-search-icon.svg" alt="mic button" class="mic-icon">
+                </button>
+
+               
+             </div>
+           
+
+        <div class="right">
+           <button class="upload-btn">
+                <img src="icons/upload.svg" alt="upload" class="upload-icon">
+           </button>
+
+            <button class="apps-btn">
+                <img src="icons/youtube-apps.svg" alt="apps" class="apps-icon">
+           </button>
+
+            <button class="notifications-btn">
+                <img src="icons/notifications.svg" alt="notifications" class="notifications">
+                <div class="noti-count">3</div>
+           </button>
+
+            <button class="profile-btn">
+                <img src="icons/upload.svg" alt="profile pic" class="profile-icon">
+           </button>
+
+        </div>
+        
+    </header>
+
+    <div class="sidebar">
+        <div class="side-box">
+            <img src="icons/home.svg" alt="" class="">
+           
+            <div>Home</div>
+        </div>
+
+        <div class="side-box">
+            <img src="icons/explore.svg" alt="" class="">
+            <div>Explore</div>
+    
+        </div>
+         
+
+        <div class="side-box">
+            <img src="icons/subscriptions.svg" alt="" class="">
+            <div>Subscriptions</div>
+          
+        </div>
+         
+
+        <div class="side-box">
+            <img src="icons/originals.svg" alt="" class="">
+            <div>Orginals</div>
+        </div>
+         
+        <div class="side-box">
+            <img src="icons/youtube-music.svg" alt="" class="">
+            <div>Youtube Music</div>
+        </div>
+         
+        <div class="side-box">
+            <img src="icons/library.svg" alt="" class="">
+            <div>Library</div>
+        </div>
+         
+         
+         
+
+    </div>
+
+    <div class="video-grid">
+
+         <div class="video-preview">
+        <div class="thumbnail">
+              <img class="thumbnail-1" src="thumbnails/thumbnail-1.webp" alt="thumbnail-1">
+
+            <div class="video-time">
+                21.50</div>
+        </div>
+  
+        <div class="video-row">
+            <div class="profile-pic">
+                <img src="googlelogo.png" alt="profile-pic" class="profile-image">
+            </div>
+            <div class="video-info">
+            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+            <p class="owner-name">Marques Broniee</p>
+            <p class="details">3.4M views &#183; 6 months ago </p>
+            </div>  
+        </div>
+    </div>
+
+     <div class="video-preview">
+        <div class="thumbnail">
+              <img class="thumbnail-2" src="thumbnails/thumbnail-2.webp" alt="thumbnail-2">
+              
+               <div class="video-time">
+                12.54</div>
+        </div>
+  
+        <div class="video-row">
+            <div class="profile-pic">
+                <img src="googlelogo.png" alt="profile-pic" class="profile-image">
+            </div>
+            <div class="video-info">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="owner-name">Markiplier</p>
+            <p class="details">9M views · 4 years ago </p>
+            </div>  
+        </div>
+    </div>
+
+       <div class="video-preview">
+        <div class="thumbnail">
+              <img class="thumbnail-1" src="thumbnails/thumbnail-1.webp" alt="thumbnail-1">
+              
+               <div class="video-time">
+                2.23</div>
+        </div>
+  
+        <div class="video-row">
+            <div class="profile-pic">
+                <img src="googlelogo.png" alt="profile-pic" class="profile-image">
+            </div>
+            <div class="video-info">
+            <p class="video-title">Ronaldo and Felix get doubles, Al Nassr cruise past Al Riyadh! 💥 | Powered by Toyota</p>
+            <p class="owner-name">Marques Broniee</p>
+            <p class="details">3.4M views &#183; 6 months ago </p>
+            </div>  
+        </div>
     </div>
 
     <div class="video-preview">
-    <img class="thumbnail-2" src="thumbnails/thumbnail-2.webp" alt="thumbnail-2"> 
-    <p class="video-title">
-Try Not To Laugh Challenge #9</p>
-    <p>Markiplier</p>
-    <p>9M views · 4 years ago </p>
+        <div class="thumbnail">
+              <img class="thumbnail-2" src="thumbnails/thumbnail-2.webp" alt="thumbnail-2">
+
+               <div class="video-time">
+                30.89</div> 
+        </div>
+  
+        <div class="video-row">
+            <div class="profile-pic">
+                <img src="googlelogo.png" alt="profile-pic" class="profile-image">
+            </div>
+            <div class="video-info">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="owner-name">Markiplier</p>
+            <p class="details">9M views · 4 years ago </p>
+            </div>  
+        </div>
     </div>
+
+     <div class="video-preview">
+        <div class="thumbnail">
+              <img class="thumbnail-1" src="thumbnails/thumbnail-1.webp" alt="thumbnail-1">
+               <div class="video-time">
+                12.05</div> 
+        </div>
+  
+        <div class="video-row">
+            <div class="profile-pic">
+                <img src="googlelogo.png" alt="profile-pic" class="profile-image">
+            </div>
+            <div class="video-info">
+            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+            <p class="owner-name">Marques Broniee</p>
+            <p class="details">3.4M views &#183; 6 months ago </p>
+            </div>  
+        </div>
+    </div>
+
+      <div class="video-preview">
+        <div class="thumbnail">
+              <img class="thumbnail-2" src="thumbnails/thumbnail-2.webp" alt="thumbnail-2">
+               <div class="video-time">
+                52.12</div> 
+        </div>
+  
+        <div class="video-row">
+            <div class="profile-pic">
+                <img src="googlelogo.png" alt="profile-pic" class="profile-image">
+            </div>
+            <div class="video-info">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="owner-name">Markiplier</p>
+            <p class="details">9M views · 4 years ago </p>
+            </div>  
+        </div>
+    </div>
+
+     <div class="video-preview">
+        <div class="thumbnail">
+              <img class="thumbnail-1" src="thumbnails/thumbnail-1.webp" alt="thumbnail-1">
+               <div class="video-time">
+               8.30</div> 
+        </div>
+  
+        <div class="video-row">
+            <div class="profile-pic">
+                <img src="googlelogo.png" alt="profile-pic" class="profile-image">
+            </div>
+            <div class="video-info">
+            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+            <p class="owner-name">Marques Broniee</p>
+            <p class="details">3.4M views &#183; 6 months ago </p>
+            </div>  
+        </div>
+    </div>
+
+
+    </div>
+   
     
     
  </body>

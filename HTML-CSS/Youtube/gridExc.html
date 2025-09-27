@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Excercise</title>
+    <style>
+        .grid-1{
+            display: grid;
+            grid-template-columns: 200px 75px ;
+        }
+        .col1{
+            
+            background-color: lightblue;
+        }
+        .col2{
+          
+            background-color: lightcoral;
+        }
+        .grid-2{
+            display: grid;
+            grid-template-columns: 50px  1fr 50px;
+            margin-top: 10px;
+        }
+        .col11{
+            background-color: lightblue;
+        }
+        .col22{
+            background-color: lightcoral;
+        }
+        .col33{
+            background-color: lightblue;
+        }
+        .grid-3{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            row-gap: 20px;
+            column-gap: 10px;
+        }
+        .col{
+            background-color: lightcoral;
+        }
+
+    
+        .container-fb{
+            display: grid;
+            
+            grid-template-columns: 190px 190px 190px;
+           column-gap: 13px;
+            
+            
+
+        }
+         .container-add{
+            width: 190px;
+            box-shadow: 1px 1px 5px rgba(0, 0 , 0 , 0.5);
+            border-radius: 2px;
+            
+
+         }
+        .fb-profile{
+            width:190px;
+            height:190px;
+        }
+        .profile-fb{
+            width: 100%;
+            height: 100%;
+        }
+        .fb-name{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .fb-info{
+            margin-top: 15px;
+            margin-left: 7px;
+        }
+        
+
+        .mutual-block{
+            margin-top: 6px;
+            display: grid;
+            grid-template-columns: 35px  1fr ;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mutual-pic{
+            width: 25px;
+            height: 25px;
+            border-radius: 15px;
+        }
+        .mutual-cnt{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            color: grey;
+        }
+        .add-block{
+            margin-top: 6px;
+        }
+
+        .add-btn{
+            background-color:rgb(61, 156, 251) ;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 3px;
+            margin-top: 2px;
+
+            margin-bottom: 7px;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+           transition: background-color 0.15s;
+        }
+        .add-btn:hover{
+            background-color: rgba(61, 156, 251, 0.6);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Grid Excercise</h1>
+    <h2>Excercise 11a.</h2>
+    <div class="grid-1">
+        <div class="col1">
+            200px
+        </div>
+        <div class="col2">
+            75px
+        </div>
+    </div>
+  <h2>Excercise 11b.</h2>
+    <div class="grid-2">
+        
+        <div class="col11">
+            50px
+        </div>
+        <div class="col22">
+           free space
+        </div>
+        <div class="col33">
+           50px
+        </div>
+    </div>
+
+    <h2>Excercise 11c. </h2>
+
+     <div class="grid-3">
+    
+         <div class="col">
+            equal
+        </div>
+         <div class="col">
+            equal
+        </div>
+          
+        <div class="col">
+            equal
+        </div>
+         <div class="col">
+            equal
+        </div>
+         <div class="col">
+            equal
+        </div>
+          
+        <div class="col">
+            equal
+        </div>
+         <div class="col">
+            equal
+        </div>
+        <div class="col">
+            equal
+        </div>
+        
+       
+        
+    </div>
+    
+    <h2>Excercise 11d.</h2>
+    <h3>Facebook Add Friend 10d. Task Using Grid , No Display </h3>
+
+    <div class="container-fb">
+
+        <div class="container-add">
+            <div class="fb-profile">
+                <img src="oliver.jpg" alt=""
+                class="profile-fb">
+            </div>
+            <div class="fb-info">
+
+                <div class="fb-name">
+                Oliver
+            </div>
+            <div class="mutual-block">
+
+                <div class="mutual-image">
+                    <img src="oliver1.jpeg" alt="" class="mutual-pic">
+                </div>
+
+                <div class="mutual-cnt">
+                    22 mutual friends
+                </div>
+            </div>
+
+            <div class="add-block">
+                <button class="add-btn">Add Friend</button>
+            </div>
+
+            </div>
+        </div>
+
+         <div class="container-add">
+            <div class="fb-profile">
+                <img src="mimi.jpeg" alt=""
+                class="profile-fb">
+            </div>
+            <div class="fb-info">
+
+                <div class="fb-name">
+                Mimi
+            </div>
+            <div class="mutual-block">
+                <div class="mutual-image">
+                    <img src="oliver1.jpeg" alt="" class="mutual-pic">
+                </div>
+                <div class="mutual-cnt">
+                    5 mutual friends
+                </div>
+            </div>
+
+            <div class="add-block">
+                <button class="add-btn">Add Friend</button>
+            </div>
+
+            </div>
+        </div>
+
+         <div class="container-add">
+            <div class="fb-profile">
+                <img src="rex.webp" alt=""
+                class="profile-fb">
+            </div>
+            <div class="fb-info">
+
+                <div class="fb-name">
+                Rex
+            </div>
+            <div class="mutual-block">
+                <div class="mutual-image">
+                    <img src="oliver1.jpeg" alt="" class="mutual-pic">
+                </div>
+                <div class="mutual-cnt">
+                    14  mutual friends
+                </div>
+            </div>
+
+            <div class="add-block">
+                <button class="add-btn">Add Friend</button>
+            </div>
+
+            </div>
+        </div>
+        </div>
+</body>
+</html>

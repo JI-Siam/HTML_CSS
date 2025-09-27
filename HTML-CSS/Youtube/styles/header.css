@@ -1,0 +1,156 @@
+
+
+header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 55px;
+            margin-bottom: 40px;
+            position: fixed;
+            top:0px;
+            left: 0px;
+            right: 0px;
+            background-color: white;
+            border-bottom: solid rgb(204, 202, 202) 1px;
+            z-index: 100;
+     }
+.left {
+   background-color: lightblue;
+}
+
+.middle{
+   flex: 1;
+   margin-left: 70px;
+   margin-right: 40px;
+   max-width: 450px;
+   display: flex;
+    align-items: center;
+
+}
+
+.right{
+
+width: 200px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-right: 30px;
+flex-shrink: 0;
+}
+
+.left{
+    display: flex;
+    background-color: white;
+}
+
+.hamburger{
+   width: 23px;
+   margin-left: 25px;
+   margin-right: 25px;
+}
+
+.yt-logo{
+  width: 90px;
+}
+
+
+.search-bar{
+    height: 34px;
+    flex: 1;
+    border-radius: 3px;
+    border : solid 1px rgb(189, 188, 188) ; 
+    font-family: roboto , arial;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: inset 1px 1px 5px rgba(0, 0 , 0 , 0.03);
+    width: 10px;
+}
+.search-bar::placeholder{
+  padding-left: 10px;
+   font-family: roboto , arial;
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.search-btn{
+    width: 65px;
+    height: 38px;
+    background-color: rgb(243, 242, 242);
+    border: solid rgb(189, 188, 188) 1px;
+    border-radius: 3px;
+    margin-left: -10px;
+      cursor: pointer;
+}
+.search-icon{
+    width: 22px;
+    margin-top: 3px;
+}
+
+.mic-btn{
+margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 20px ;
+  cursor: pointer;
+}
+.mic-icon{
+    width: 22px;
+    margin-top: 3px;
+    margin-left: 0px;
+    
+}
+
+.upload-btn{
+    margin-left: 10px;
+  width: 35px;
+  background-color: transparent;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+.apps-btn{
+ margin-left: 10px;
+  width: 35px;
+  background-color: transparent;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.notifications-btn{
+  margin-left: 10px;
+  width: 35px;
+  background-color: transparent;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.noti-count{
+    position: absolute;
+    top: 4px;
+    right:2px;
+    background-color: rgb(207, 6, 6);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 10px;
+    font-family: roboto , arial;
+    padding: 5px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    z-index: 100;
+    
+}
+
+
+.profile-btn{
+  margin-left: 10px;
+  width: 35px;
+  background-color: transparent;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
